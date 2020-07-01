@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+
+<!-- 반응형 웹 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CSS Fonts</title>
+<link
+	href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
+	rel="stylesheet">
+	
+<style type="text/css">
+
+/* web fonts */
+@font-face {
+	font-family:'GmarketSansBold';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* style 지정 */
+p.gmarket {
+	font-family: 'GmarketSansBold';
+	font-size: 5vw;
+}
+
+p {
+	font-size: 2em;
+}
+
+p.serif {
+	font-family: Times New Roman, Times, serif;
+}
+
+p.sansserif {
+	font-family: Arial, sans-serif;
+}
+
+p.gungseo {
+	font-family: 궁서;
+}
+
+p.nanum {
+	font-family: 'Nanum Pen Script', cursive;
+}
+</style>
+
+</head>
+
+<body>
+
+	<!-- 
+
+* fonts
+
+- 글꼴			: font-family
+- 글자 스타일	: font-style	>> Italic
+- 글자 굵기		: font-weight	>> Bold
+- 글자 크기		: font-size		>> 기본 크기 16px = 1em
+								   w3c는 em 사용 권장
+								   
+- vw (뷰포트)	: 디바이스 창의 크기에 맞춰서 크기 설정
+				  1vw = 뷰포트 너비의 1%
+				  반응형 웹 제작시 사용
+	
+ -->
+
+	<p>This is a paragraph (글자 연습)</p>
+	<p class="serif">This is a paragraph (글자 연습)</p>
+	<p class="sansserif">This is a paragraph (글자 연습)</p>
+	<p class="gungseo">This is a paragraph (글자 연습)</p>
+	<p class="nanum">This is a paragraph (글자 연습)</p>
+	<p class="gmarket">This is a paragraph (글자 연습)</p>
+
+</body>
+
+</html>

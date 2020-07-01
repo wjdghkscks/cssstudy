@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title> CSS padding </title>
+
+<style type="text/css">
+
+	div {
+		padding: 50px;
+		border: 1px solid black;
+	}
+	
+	div.mydiv1 {
+		width: 400px;
+		background-color: #eeeeee;
+	}
+	
+	div.mydiv2 {
+		width: 400px;
+		padding: 100px;
+		background-color: #bbbbbb;
+	}
+	
+	/* 
+	- width 설정 후 padding을 설정하면 크기가 커질 수 밖에 없음
+	- box-sizing: border-box; 를 설정하면 크기 변화 X
+	
+	 */
+	
+	div.mydiv3 {
+		width: 500px;
+		padding: 100px;
+		box-sizing: border-box;
+		background-color: #999999;
+	}
+	
+</style>
+
+</head>
+
+<body>
+
+	<h1 style="text-align: center;"> padding </h1>
+	<div> padding padding padding padding padding </div>
+	<div class="mydiv1"> padding padding padding padding padding </div>
+	<div class="mydiv2"> padding padding padding padding padding </div>
+	<div class="mydiv3"> padding padding padding padding padding </div>
+
+</body>
+</html>

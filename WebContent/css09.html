@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> CSS a link </title>
+
+<style type="text/css">
+
+	/*
+	a:link {
+		text-decoration: none;
+		color: #2222ee;
+	}
+	
+	a:visited {
+		color: #22ee22;
+	}
+	
+	
+	a:active {
+		color: #ee2222;
+		font-weight: bold;
+	}
+	
+	a:hover {
+		background-color: pink;
+	}
+	*/
+	
+	a:link, a:visited {
+		background-color: hotpink;
+		color: #222222;
+		padding: 14px 25px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+	}
+	
+	a:hover, a:visited {
+		background-color: #22ee22;
+		font-family: serif;
+		font-size: 1em;
+	}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- 
+* a link
+- 밑줄 지우기	: text-decoration: none;
+
+- a:link		: 방문하지 않은
+- a:visited		: 방문한 적이 있는
+- a:active		: 클릭했을 때
+- a:hover		: 마우스를 가져다 댔을 때
+
+-->
+
+	<a href="#" target="_blank"> This is a link 1 </a>
+	<a href="#" target="_blank"> This is a link 2 </a>
+	<a href="#" target="_blank"> This is a link 3 </a>
+	<a href="#" target="_blank"> This is a link 4 </a>
+
+
+
+
+</body>
+
+</html>

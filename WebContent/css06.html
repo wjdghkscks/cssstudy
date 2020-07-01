@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title> CSS margin </title>
+
+<style type="text/css">
+
+	div {
+		border: 1px solid black;
+		/* margin: 50px;		>> 상하좌우 */
+		/* margin: 50px 25px;	>> 상하/좌우 */
+		margin: 25px 50px 75px 100px;	/* 상/우/하/좌 */
+		background-color: #88aeee
+	}
+	
+	div.mydiv1 {
+		background-color: tomato;
+		text-align: center;
+		margin: 0px;
+	}
+	
+	div.mydiv2 {
+		background-color: #cccccc;
+		width: 200px;
+		text-align: center;
+		margin: 50px auto;	/* border 자체를 가운데로 정렬할 때 auto 를 사용 */
+	}
+	
+	#mydiv3 {
+		background-color: #88eeaa;
+		width: 200px;
+		text-align: center;
+		margin-left: 100px; /* 왼쪽 여백 추가 */
+	}
+
+</style>
+
+</head>
+
+<body>
+
+	<h1 style="text-align: center;"> margin </h1>
+	<div> margin margin margin margin margin </div>
+	<div class="mydiv1"> margin margin margin margin margin </div>
+	<div class="mydiv2"> margin margin margin margin margin </div>
+	<div id="mydiv3">
+		<p class="myclass"> margin margin margin margin margin </p>
+	</div>
+
+</body>
+
+</html>
