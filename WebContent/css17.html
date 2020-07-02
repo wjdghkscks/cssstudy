@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>CSS Sibling</title>
+<style type="text/css">
+	p {
+		color: #eeeeee;
+	}
+	div p {
+		background-color: #aa7799;
+	}
+	div>p {
+		background-color: #11aa77;
+	}
+	div+p {
+		background-color: #3366cc;
+	}
+	div~p {
+		background-color: pink;
+	}
+</style>
+</head>
+
+<body>
+
+<!-- 
+* : 모든 태그
+. : class
+# : id
+  : 자손 태그 (하위에 있는 모든 태그 포함)
+> : 자식 태그 (
++ : 인접한 형제 태그 (next)
+~ : 모든 형제 태그 (next)
+	
+ -->
+
+<div>
+	<p>ICT 인재 개발원 1</p>
+	<p>ICT 인재 개발원 2</p>
+	<section>
+		<p>ICT 인재 개발원 2-1</p>
+	</section>
+	<p>ICT 인재 개발원 3</p>
+</div>
+<p>ICT 인재 개발원</p>
+<p>ICT 인재 개발원</p>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<title>CSS dropdown</title>
+<style type="text/css">
+
+	#btn:hover {
+		/* 마우스 오버 시 나타나게 함 */
+		display: block;
+	}
+
+	div.drop-content {
+		/* 숨김 기능 */
+		display: none;
+		position: absolute;
+		background-color: #555555;
+	}
+	
+	div.drop-content a {
+		color: #eeeeee;
+		padding: 8px;
+		text-decoration: none;
+		display: block;
+	}
+	
+</style>
+
+</head>
+
+<body>
+
+	<h2>드롭 다운 메뉴</h2>
+	
+	<div class="dropdown">
+		<span id="btn">WEB Program</span>
+		<div class="drop-content">
+			<p>Java</p>
+			<p>Servlet</p>
+			<p>JSP</p>
+			<p>HTML/CSS</p>
+			
+		</div>
+	</div>
+	
+</body>
+</html>
